@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Main {
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_RED = "\u001B[31m";
@@ -73,5 +75,15 @@ public class Main {
             if(i%7==fridayDate)
                 System.out.printf("Сегодня пятница, %d-e число. Необходимо подготовить отчет \n",i);
         }
+
+        System.out.println(ANSI_RED+"Eighth Task 3.1"+ANSI_RESET);
+        Date currentDate = new java.util.Date();
+        int currentYear=currentDate.getYear()+1900;
+        int startYear = currentYear-200;
+        int finishYear = currentYear+100;
+        for (i=startYear;i<=finishYear;i++)
+            if(i%79==0)
+                System.out.println(i);
+        System.out.println(ANSI_RED+"Ninth Task 3.2"+ANSI_RESET);
     } // main
-}
+} // Main

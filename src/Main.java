@@ -26,5 +26,13 @@ public class Main {
         }
         System.out.println();
 
+        System.out.println(ANSI_RED+"Third Task 1.3"+ANSI_RESET);
+        int population = 12_000_000;
+        int increasePopulation = 17-8; // by 1000;
+        for(i=1;i<11;i++){
+            population+=(population/1000)*increasePopulation;
+            System.out.println("Год "+i+", численность населения составляет "+population);
+        }
+
     } // main
 }

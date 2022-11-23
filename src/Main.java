@@ -45,5 +45,18 @@ public class Main {
         System.out.println("-----------------------------------------------");
         System.out.printf("Потребуется %1$d месяцев для накопления суммы %2$,.2f рублей \n", month, deposit);
 
+        System.out.println(ANSI_RED+"Fifth Task 2.2"+ANSI_RESET);
+        month = 0;
+        deposit = 15_000;
+        while ( deposit<=purpose ){
+            month++;
+            deposit+=(deposit*percentDeposit);
+            if(month%6==0)
+                System.out.printf("Месяц %2d. Сумма накоплений равна %2$,.2f рублей \n",month, deposit);
+        }
+        System.out.println("-----------------------------------------------");
+        System.out.printf("Потребуется %1$d месяцев для накопления суммы %2$,.2f рублей \n", month, deposit);
+
+        System.out.println(ANSI_RED+"Sixth Task 2.3"+ANSI_RESET);
     } // main
 }

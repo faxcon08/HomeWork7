@@ -67,5 +67,11 @@ public class Main {
                 System.out.printf("Месяц %1$3d. Сумма накоплений составляет %2$,.2f рублей \n",i,deposit);
         }
 
+        System.out.println(ANSI_RED+"Seventh Task 2.4"+ANSI_RESET);
+        int fridayDate = 3; // 1-7;
+        for(i=1;i<=31;i++){
+            if(i%7==fridayDate)
+                System.out.printf("Сегодня пятница, %d-e число. Необходимо подготовить отчет \n",i);
+        }
     } // main
 }

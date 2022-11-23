@@ -58,5 +58,14 @@ public class Main {
         System.out.printf("Потребуется %1$d месяцев для накопления суммы %2$,.2f рублей \n", month, deposit);
 
         System.out.println(ANSI_RED+"Sixth Task 2.3"+ANSI_RESET);
+        deposit = 15_000;
+        percentDeposit = 0.07;
+        int years = 9 ;
+        for(i=1;i<=years*12;i++){
+            deposit+=(deposit*percentDeposit);
+            if(i%6==0)
+                System.out.printf("Месяц %1$3d. Сумма накоплений составляет %2$,.2f рублей \n",i,deposit);
+        }
+
     } // main
 }

@@ -34,5 +34,16 @@ public class Main {
             System.out.println("Год "+i+", численность населения составляет "+population);
         }
 
+        System.out.println(ANSI_RED+"Fourth Task 2.1"+ANSI_RESET);
+        double deposit = 15_000;
+        double percentDeposit = 0.07;
+        purpose = 12_000_000;
+        month=0;
+        while ( deposit<=purpose ){
+            System.out.printf("Месяц %2d. Сумма накоплений равна %2$,.2f рублей \n",++month, (deposit+=(deposit*percentDeposit)));
+        }
+        System.out.println("-----------------------------------------------");
+        System.out.printf("Потребуется %1$d месяцев для накопления суммы %2$,.2f рублей \n", month, deposit);
+
     } // main
 }

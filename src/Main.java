@@ -84,6 +84,9 @@ public class Main {
         for (i=startYear;i<=finishYear;i++)
             if(i%79==0)
                 System.out.println(i);
+
         System.out.println(ANSI_RED+"Ninth Task 3.2"+ANSI_RESET);
+        for (i=1;i<=10;i++)
+            System.out.printf("2*%d=%d \n",i,2*i);
     } // main
 } // Main

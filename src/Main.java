@@ -16,6 +16,15 @@ public class Main {
         }
 
         System.out.println(ANSI_RED+"Second Task 1.2"+ANSI_RESET);
+        int i = 1;
+        while (i<=10){
+            System.out.print(i++ +" ");
+        }
+        System.out.println();
+        for(i--;i>0;i--){
+            System.out.print(i+" ");
+        }
+        System.out.println();
 
     } // main
 }
